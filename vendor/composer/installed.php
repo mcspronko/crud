@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '18d1848dfe8ebc6366e6297968264f512bd447d9',
+        'reference' => '4b007dfb456488cdd64d8d3cb422d1fd09e76132',
         'name' => 'pronko/crud',
         'dev' => true,
     ),
@@ -151,7 +151,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '18d1848dfe8ebc6366e6297968264f512bd447d9',
+            'reference' => '4b007dfb456488cdd64d8d3cb422d1fd09e76132',
             'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(

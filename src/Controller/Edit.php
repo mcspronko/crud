@@ -19,12 +19,15 @@ class Edit
     {
         $view = new View();
         $params = $request->getParams();
-        if (empty($params['id'])) {
-            $response->setUrl('/');
-            return $response;
+        if (!empty($params['user_id'])) {
+//            $response->setUrl('/');
+//            return $response;
         }
+
+        $user = [];
+
         $response->setBody($view->render('edit.phtml', [
-            'message' => 'Max'
+            'user' => $user
         ]));
 
         return $response;

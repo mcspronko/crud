@@ -25,7 +25,7 @@ class Response
     public function render(): void
     {
         if (!empty($this->url)) {
-            header('Location: ' . $this->url);
+            header('Location: http://localhost:9999' . $this->url);
             exit;
         }
         echo $this->body;

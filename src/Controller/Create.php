@@ -32,7 +32,7 @@ class Create
 //        foreach ($pdo->query("SELECT * FROM user") as $row) {
 //            var_dump($row);
 //        }
-//        $response->setUrl('/');
+        $response->setUrl('/edit');
 
         return $response;
     }

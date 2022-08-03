@@ -6,6 +6,7 @@ use Pronko\Crud\Controller\Create;
 use Pronko\Crud\Controller\Delete;
 use Pronko\Crud\Controller\Edit;
 use Pronko\Crud\Controller\Index;
+use Pronko\Crud\Controller\NewAction;
 use Pronko\Crud\Controller\Update;
 use Pronko\Crud\Router;
 
@@ -15,6 +16,7 @@ $router = new Router();
 
 $router->get('/', Index::class);
 $router->get('/edit', callback: Edit::class);
+$router->get('/new', callback: NewAction::class);
 
 $router->post('/create', callback: Create::class);
 $router->post('/update', callback: Update::class);
