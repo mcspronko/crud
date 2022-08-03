@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Pronko\Crud;
 
-
 class View
 {
     public function __construct(
         private string $templateDir = 'templates'
-    ) {}
+    ) {
+    }
 
     public function render(string $template, array $vars = []): string
     {

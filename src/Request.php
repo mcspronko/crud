@@ -8,7 +8,8 @@ class Request
 {
     public function __construct(
         private array $params = []
-    ) {}
+    ) {
+    }
 
     public function getParams(): array
     {
