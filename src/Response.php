@@ -9,7 +9,8 @@ class Response
     public function __construct(
         private string $body = '',
         private string $url = '',
-    ) {}
+    ) {
+    }
 
     public function setBody(string $body): void
     {
