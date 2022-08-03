@@ -1,6 +1,8 @@
 {
     "name": "pronko/crud",
+    "description": "CRUD with Routing project",
     "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Pronko\\Crud\\": "src/"
