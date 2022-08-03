@@ -1,0 +1,22 @@
+{
+    "name": "pronko/crud",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Pronko\\Crud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max Pronko",
+            "email": "max.pronko@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests --bootstrap vendor/autoload.php"
+    }
+}

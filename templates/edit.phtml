@@ -1,0 +1,19 @@
+<?php
+
+/** @var string $message */
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHP Update</title>
+</head>
+<body>
+    <form action="/update" method="POST">
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message" value="<?= $message ?? ''; ?>"/>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
