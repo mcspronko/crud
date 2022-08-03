@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col">
+        <h3>Users</h3>
+    </div>
+    <div class="col">
+        <a href="/create" class="btn btn-primary">Add New User</a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Created At</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+        <?php
+        /** @var array $users */
+        foreach ($users as $user): ?>
+            <tr>
+                <th scope="row"><?= $user['user_id'];?></th>
+                <td><?= $user['firstname'];?></td>
+                <td><?= $user['lastname'];?></td>
+                <td><?= $user['created_at'];?></td>
+                <td>
+                    <a class="btn btn-outline-secondary" href="<?= sprintf('/edit?user_id=%s', $user['user_id']); ?>">Edit</a>
+                    <a class="btn btn-outline-danger" href="<?= sprintf('/delete?user_id=%s', $user['user_id']); ?>">Delete</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+
+    </tbody>
+</table>

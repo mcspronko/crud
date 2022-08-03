@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Pronko\Crud\Controller;
 
+use Pronko\Crud\Database;
 use Pronko\Crud\Request;
 use Pronko\Crud\Response;
 use Pronko\Crud\View;
@@ -18,8 +19,12 @@ class Index
     public function __invoke(Request $request, Response $response): Response
     {
         $view = new View();
+        $pdo = Database::get();
+
+        $statement = $pdo->query('SELECT * FROM user ORDER BY created_at DESC');
+        $users = $statement->fetchAll();
         $response->setBody($view->render('index.phtml', [
-            'name' => 'Max'
+            'users' => $users
         ]));
 
         return $response;
