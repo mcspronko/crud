@@ -21,6 +21,6 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit tests --bootstrap vendor/autoload.php",
-        "phpcs": "/vendor/bin/phpcs --standard=PSR12 src/"
+        "phpcs": "vendor/bin/phpcs --standard=PSR12 src/"
     }
 }
